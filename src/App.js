@@ -1,14 +1,19 @@
 import Navbar from "./components/Navbar";
-import GlobalStyle from "./globalStyles";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./pages/Home";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import SignUp from "./pages/SignUp/SignUp";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navigation from "./components/Navigation/Navigation";
+import FormEmployer from "./pages/FormEmployer/FormEmployer";
 function App() {
   return (
     <Router>
-      <GlobalStyle />
-      <Navbar />
-      <Home />
+      <Navigation />
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/signup" exact element={<SignUp />} />
+        <Route path="/FormEmployer" exact element={<FormEmployer />} />
+      </Routes>
     </Router>
   );
 }
