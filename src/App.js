@@ -5,6 +5,7 @@ import SignUp from "./pages/SignUp/SignUp";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation/Navigation";
 import FormEmployer from "./pages/FormEmployer/FormEmployer";
+import Jobs from "./pages/Jobs/Jobs";
 function App() {
   return (
     <Router>
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" exact element={<Home />} />
         <Route path="/signup" exact element={<SignUp />} />
         <Route path="/FormEmployer" exact element={<FormEmployer />} />
+        <Route path="/jobs" exact element={<Jobs />} />
       </Routes>
     </Router>
   );

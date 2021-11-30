@@ -5,8 +5,12 @@ const FormEmployer = () => {
   return (
     <Container>
       <Row>
-        <Button>Go back</Button>
-        <h3>Create your employer profil </h3>
+        <Col>
+          <Button>Go back</Button>
+        </Col>
+        <Col>
+          <h3>Create your employer profil </h3>
+        </Col>
       </Row>
       <Row>
         <Col>
@@ -14,7 +18,7 @@ const FormEmployer = () => {
             <Col md="8">
               <Button>Sign up with Google</Button>
               <FormControl
-                className="m-6"
+                className="mt-6"
                 id="key-words-input"
                 placeholder="First name*"
                 aria-describedby="basic-addon3"
