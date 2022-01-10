@@ -1,28 +1,53 @@
-import React from "react";
 import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png";
+import "./Navigation.css";
 const Navigation = () => {
   return (
-    <Navbar bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+    <Navbar expand="lg" className="navBar">
+      <Container className="mainNav">
+        <Navbar.Brand className="navBrand">
+          <img src={logo} alt="Brand" />
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#home">
-              <Link to="/jobs">Jobs</Link>
+          <Nav className="navigationLinks">
+            <Nav.Link href="/">
+              <Link className="navLinkItem" to="/">
+                Home
+              </Link>
             </Nav.Link>
-            <Nav.Link href="#link">Students</Nav.Link>
-            <Nav.Link href="#link">Employers</Nav.Link>
-            <Nav.Link href="#link">About us</Nav.Link>
-            <Nav.Link href="#link">Blog</Nav.Link>
+            <Nav.Link>
+              <Link className="navLinkItem" to="/jobs">
+                Jobs
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link className="navLinkItem" to="/jobs">
+                Students
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link className="navLinkItem" to="/jobs">
+                Employers
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link className="navLinkItem" to="/jobs">
+                About us
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              <Link className="navLinkItem" to="/jobs">
+                Blog
+              </Link>
+            </Nav.Link>
           </Nav>
-          <Nav>
-            <Button className="m-2">Sign in</Button>
+          <Nav className="navButtons">
             <Link to="/signup">
-              <Button className="m-2">Sign up</Button>{" "}
+              <Button className="m-2 signupButton">Sign up</Button>{" "}
             </Link>
+            <Button className="m-2 signinButton">Sign in</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>

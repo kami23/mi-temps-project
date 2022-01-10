@@ -1,0 +1,19 @@
+.textPrimaryColor {
+  color: #e94a47;
+  font-size: 4rem;
+}
+.slogan {
+  color: #0f4c81;
+  font-size: 4rem;
+}
+.textSecondaryColor {
+  color: #0f4c81;
+  font-weight: bold;
+}
+
+.setOfButtons {
+  display: table;
+}
+.espaceButton {
+  margin-left: 1rem;
+}
