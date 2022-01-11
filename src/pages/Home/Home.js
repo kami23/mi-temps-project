@@ -4,6 +4,7 @@ import homePicture from "../../assets/homePicture.png";
 import ListCategory from "../ListCategory/ListCategory";
 import SearchJob from "../SearchJob/SearchJob";
 import "./Home.css";
+
 const Home = () => {
   return (
     <Container fluid="true">
