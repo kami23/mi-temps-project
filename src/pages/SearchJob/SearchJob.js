@@ -13,7 +13,7 @@ const SearchJob = () => {
     <Container>
       <h1>Find a job offer</h1>
       <Row className="justify-content-center">
-        <Col>
+        <Col style={{ backgroundColor: "red" }}>
           <Form.Label htmlFor="where-input">Where?</Form.Label>
           <FormControl
             id="where-input"

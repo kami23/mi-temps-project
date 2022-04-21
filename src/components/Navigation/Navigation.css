@@ -1,0 +1,41 @@
+.navBar {
+  padding-top: 0;
+}
+.mainNav {
+  margin-left: 0;
+  padding-left: 0;
+}
+.navBrand {
+  margin-left: 0px;
+  padding-top: 0;
+}
+.navigationLinks {
+  font-size: 22px;
+  margin-right: 2rem;
+}
+.navLinkItem {
+  color: #0f4c81;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.navButtons {
+  margin-left: 1rem;
+}
+.signupButton {
+  color: white;
+  background-color: #e94a47 !important;
+  border: none;
+  border-radius: 0%;
+  font-size: 22px;
+  width: 150px;
+}
+
+.signinButton {
+  border: 1px solid #e94a47 !important;
+  background-color: white;
+  color: #e94a47;
+  border-radius: 0%;
+  font-size: 22px;
+  width: 150px;
+}
